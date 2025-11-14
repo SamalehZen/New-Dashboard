@@ -1,0 +1,199 @@
+<html lang="en" class="h-full"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Console — Avery Nolan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script><link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style>
+</head>
+<body class="h-full bg-zinc-200 font-sans text-zinc-900" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">
+    <!-- Desktop App Container -->
+    <div class="h-screen bg-zinc-100 bg-[url(https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/8e249747-11d9-4c29-9017-590f07779c2e_3840w.jpg)] bg-cover pt-5 pr-5 pb-5 pl-5">
+      <div class="h-full overflow-hidden shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] max-w-7xl bg-white rounded-[30px] ml-auto mr-auto">
+        <div class="h-full pt-2 pr-2 pb-2 pl-2">
+          <div class="h-full grid grid-cols-1 lg:grid-cols-12 gap-2">
+            <!-- Left Sidebar -->
+            <aside class="lg:col-span-3 md:p-5 flex flex-col gap-5 text-zinc-100 bg-zinc-950 rounded-3xl pt-4 pr-4 pb-4 pl-4 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+              <!-- Brand / Collapse -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="h-9 w-9 flex text-zinc-900 bg-green-400 rounded-full items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles h-5 w-5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                  </div>
+                  <span class="text-lg tracking-tight font-medium font-geist">Nova Sales</span>
+                </div>
+                <button class="p-2 rounded-xl bg-zinc-900/60 hover:bg-zinc-800 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="command" class="lucide lucide-command h-5 w-5"><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path></svg>
+                </button>
+              </div>
+
+              <!-- KPIs -->
+              <div class="grid grid-cols-2 gap-3">
+                <div class="rounded-2xl bg-zinc-900 p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm text-zinc-400 font-geist">Worklist</span>
+                    <span class="h-2 w-2 rounded-full bg-green-400"></span>
+                  </div>
+                  <div id="kpi-worklist" class="mt-2 text-3xl tracking-tight font-jakarta font-light" style=""></div>
+                </div>
+                <div class="rounded-2xl bg-zinc-900 p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm text-zinc-400 font-geist">New leads</span>
+                    <span class="h-2 w-2 rounded-full bg-orange-400"></span>
+                  </div>
+                  <div id="kpi-newLeads" class="mt-2 text-3xl tracking-tight font-jakarta font-light" style=""></div>
+                </div>
+                <div class="rounded-2xl bg-zinc-900 p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm text-zinc-400 font-geist">Updates</span>
+                    <span class="h-2 w-2 rounded-full bg-cyan-400"></span>
+                  </div>
+                  <div id="kpi-updates" class="mt-2 text-3xl tracking-tight font-jakarta font-light" style=""></div>
+                </div>
+                <div class="rounded-2xl bg-zinc-900 p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm text-zinc-400 font-geist">Assigned</span>
+                    <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                  </div>
+                  <div id="kpi-assigned" class="mt-2 text-3xl tracking-tight font-jakarta font-light" style=""></div>
+                </div>
+              </div>
+
+              <!-- Nav icons -->
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm text-zinc-400 font-geist">Menu</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <button class="flex items-center gap-3 w-full px-3 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home h-5 w-5 text-zinc-300"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    <span class="text-sm text-zinc-100 font-geist">Home</span>
+                  </button>
+                  <button class="flex items-center gap-3 w-full px-3 py-2 rounded-xl hover:bg-zinc-900 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users h-5 w-5 text-zinc-300"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                    <span class="text-sm text-zinc-100 font-geist">Leads</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Worklist -->
+              <div class="mt-1">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <h3 class="text-sm font-medium tracking-tight font-geist">Worklist</h3>
+                  </div>
+                  <button class="text-xs text-zinc-400 hover:text-zinc-200 font-geist">View all</button>
+                </div>
+                <div id="worklist-container" class="space-y-2 max-h-[28rem] overflow-y-auto pr-1">
+                </div>
+              </div>
+
+              <!-- Footer avatar -->
+              <div class="mt-auto flex items-center gap-3 rounded-2xl bg-zinc-900 p-3">
+                <img src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/b42a4dfd-8458-407e-a755-f3d75cdd369b_320w.jpg" alt="me" class="h-9 w-9 rounded-full object-cover">
+                <div class="flex-1">
+                  <div class="text-sm font-medium tracking-tight font-geist">Jordan Lake</div>
+                  <div class="text-xs text-zinc-400 font-geist">Account Executive</div>
+                </div>
+                <button class="p-2 rounded-xl bg-zinc-800 hover:bg-zinc-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-out" class="lucide lucide-log-out h-5 w-5"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg>
+                </button>
+              </div>
+            </aside>
+
+            <!-- Main -->
+            <main class="lg:col-span-6 flex flex-col gap-2 overflow-y-auto">
+              <!-- Profile header -->
+              <section class="rounded-3xl bg-zinc-50 p-4 md:p-6 border border-zinc-200/50">
+                <div class="flex items-start gap-4 md:gap-6">
+                  <img id="profile-avatar" alt="lead" class="h-16 w-16 md:h-20 md:w-20 rounded-full object-cover">
+                  <div class="flex-1">
+                    <div id="profile-tags" class="flex flex-wrap items-center gap-3">
+                      <h1 id="profile-name" class="text-2xl md:text-3xl tracking-tight font-jakarta font-light" style=""></h1>
+                    </div>
+                    <div id="profile-details" class="mt-2 grid grid-cols-1 gap-2 text-sm text-zinc-600">
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end gap-2">
+                    <div class="flex items-center gap-2 rounded-full bg-zinc-100 px-3 py-1">
+                      <img id="profile-manager-avatar" class="h-6 w-6 rounded-full object-cover" alt="mgr">
+                      <span class="text-xs text-zinc-700 font-geist">Manager</span>
+                      <span id="profile-manager-name" class="text-xs font-medium font-geist"></span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Timeline cards -->
+              <section id="timeline-container" class="space-y-3">
+              </section>
+
+              <!-- Messages -->
+              <section class="rounded-3xl bg-zinc-50 p-4 md:p-5 border border-zinc-200/50">
+                <div id="messages-container" class="mt-4 space-y-3">
+                </div>
+                <div class="mt-4 flex items-end gap-2">
+                  <input placeholder="Enter message" class="w-full rounded-2xl bg-zinc-100 px-4 py-3 text-sm outline-none focus:ring-2 ring-zinc-200">
+                  <button class="h-11 w-11 rounded-full bg-green-400 text-zinc-900 flex items-center justify-center hover:brightness-95">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send h-5 w-5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                  </button>
+                </div>
+              </section>
+            </main>
+
+            <!-- Right Column -->
+            <aside class="lg:col-span-3 flex flex-col gap-2">
+              <!-- Interest card -->
+              <div class="rounded-3xl p-4 md:p-5 bg-orange-500 text-white">
+                <div class="flex items-start justify-between">
+                  <div class="">
+                    <h3 id="interest-title" class="text-lg tracking-tight font-semibold font-geist"></h3>
+                    <p id="interest-subtitle" class="text-sm text-white/80 mt-1 font-geist"></p>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <div class="text-xs uppercase tracking-wide text-white/70 font-geist">Potential profit</div>
+                  <div id="interest-profit" class="mt-1 text-3xl tracking-tight font-jakarta font-light" style=""></div>
+                </div>
+                <ul id="interest-checklist" class="mt-4 space-y-2">
+                </ul>
+              </div>
+
+              <!-- Task card -->
+              <div class="rounded-3xl p-4 md:p-5 bg-cyan-400 text-zinc-900">
+                  <h3 id="task-title" class="text-lg tracking-tight font-semibold font-geist"></h3>
+                <div class="mt-4 rounded-2xl bg-white/80 p-3">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-geist">Proposal</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs text-zinc-600 font-geist">Due</span>
+                      <span id="task-due-date" class="px-2 py-0.5 rounded-full text-xs bg-zinc-900 text-white font-geist"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="text-xs uppercase tracking-wide text-zinc-700 font-geist">The customer chooses between</div>
+                  <div class="mt-2 grid grid-cols-2 gap-2">
+                    <div class="rounded-2xl bg-white/80 p-3">
+                      <div class="text-sm font-medium font-geist">Us</div>
+                      <ul id="task-us" class="mt-1 text-xs text-zinc-700 space-y-1">
+                      </ul>
+                    </div>
+                    <div class="rounded-2xl bg-white/80 p-3">
+                      <div class="text-sm font-medium font-geist">AltBrew</div>
+                      <ul id="task-competitor" class="mt-1 text-xs text-zinc-700 space-y-1">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="data.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
