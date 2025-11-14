@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — Nova Sales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full bg-zinc-100 font-sans text-zinc-900" style="font-family: Inter, sans-serif;">
+    <div class="h-full bg-zinc-100 bg-cover flex items-center justify-center p-5 bg-[url(https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/8e249747-11d9-4c29-9017-590f07779c2e_3840w.jpg)]">
+        <div class="w-full max-w-md bg-zinc-950 text-zinc-100 rounded-3xl p-8 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+
+            <!-- Brand -->
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <div class="h-9 w-9 flex text-zinc-900 bg-green-400 rounded-full items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path></svg>
+                </div>
+                <span class="text-xl tracking-tight font-medium font-geist" style="font-family: 'Geist', sans-serif;">Nova Sales</span>
+            </div>
+
+            <form id="login-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="username" class="text-sm text-zinc-400 font-geist" style="font-family: 'Geist', sans-serif;">Username</label>
+                        <input type="text" id="username" name="username" class="mt-2 w-full bg-zinc-900 border border-zinc-700 text-zinc-100 rounded-lg p-3 text-sm focus:ring-2 focus:ring-green-400 focus:outline-none" placeholder="Enter your username">
+                    </div>
+                    <div>
+                        <label for="password" class="text-sm text-zinc-400 font-geist" style="font-family: 'Geist', sans-serif;">Password</label>
+                        <input type="password" id="password" name="password" class="mt-2 w-full bg-zinc-900 border border-zinc-700 text-zinc-100 rounded-lg p-3 text-sm focus:ring-2 focus:ring-green-400 focus:outline-none" placeholder="Enter your password">
+                    </div>
+                </div>
+
+                <div id="error-message" class="mt-4 text-center text-red-400 text-sm font-geist" style="font-family: 'Geist', sans-serif; display: none;"></div>
+
+                <button type="submit" class="mt-6 w-full bg-green-400 text-zinc-900 font-bold rounded-lg p-3 text-sm hover:bg-green-500 transition-colors">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
